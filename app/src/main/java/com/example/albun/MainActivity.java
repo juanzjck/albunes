@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         AlbunAdapter adapter = new AlbunAdapter(albunes);
         adapter.setOnItemClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                String name =  ((TextView)view.findViewById(R.id.nameAlbun)).getText().toString();
+                String name =  ((TextView)view.findViewById(R.id.AlbunTextName)).getText().toString();
                 String id =  ((TextView)view.findViewById(R.id.id)).getText().toString();
                 Intent intent = new Intent(getApplicationContext(),AlbunInfo.class);
                 intent.putExtra("NAME",name);
